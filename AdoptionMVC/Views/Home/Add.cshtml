@@ -1,0 +1,23 @@
+﻿@model List<Animal>
+@{
+
+}
+<h1>Put new animals up for adoption</h1>
+<form asp-method="post" asp-action="AddAnimal">
+    <p>Enter their name</p>
+    <input type="text" name="Name" />
+
+    <p>Enter an image link</p>
+    <input type="text" name="Img" />
+
+    <p>Enter their description</p>
+    <input type="text" name="Descrpiton" />
+
+    <p>Enter their breed</p>
+    <input type="text" name="Breed" />
+
+    <p>Enter their age</p>
+    <input type="number" name="Age" />
+
+    <button type="submit">Add Animal</button>
+</form>

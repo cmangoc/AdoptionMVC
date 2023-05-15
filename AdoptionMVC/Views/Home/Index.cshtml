@@ -1,0 +1,19 @@
+﻿@model List<Animal>
+@{
+    
+}
+
+<h1>Animals for adoption</h1>
+@{
+    foreach (Animal A in Model)
+    {
+        <div>
+            <h2>@A.Name</h2>
+            <img src="@A.Img" height="300" />
+            <p>Description: @A.Description</p>
+            <p>Breed: @A.Breed</p>
+            <p>Age: @A.Age</p>
+            <a asp-action="AdoptAnimal" asp-route-id="@A.Id">Adopt</a>
+        </div>
+    }
+}
